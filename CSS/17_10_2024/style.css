@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+header > h1 {
+  text-decoration: underline;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+}
+
+footer > p {
+  color: orange;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid crimson;
+  margin: 20px;
+  padding: 20px;
+}
