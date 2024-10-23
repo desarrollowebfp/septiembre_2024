@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(18, 18, 18);
+  color: white;
+}
+
+.box {
+  align-items: center;
+  border: 2px solid red;
+  display: flex;
+  flex-grow: 1;
+  height: 200px;
+  justify-content: center;
+  padding: 20px 0 40px 0;
+  width: 200px;
+}
+
+main {
+  align-items: center;
+  border: 2px solid lightskyblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  min-height: 700px;
+  padding: 20px;
+}
