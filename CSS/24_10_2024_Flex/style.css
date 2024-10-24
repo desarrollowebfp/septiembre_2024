@@ -1,0 +1,95 @@
+/* ESTILOS GLOBALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343434;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  color: whitesmoke;
+  letter-spacing: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  text-align: center;
+  width: 450px;
+  line-height: 38px;
+  font-size: 40px;
+}
+
+/* HEADER */
+
+header {
+  background-color: black;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  header a {
+    font-size: 10px;
+  }
+
+  header img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+#hero {
+  height: 500px;
+  background-image: url(https://lornashorestore.com/cdn/shop/files/header-1_7fc0e219-c342-4e32-a5fc-0fc8c54bd8e5.jpg?v=1727124859&width=2400);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 20px;
+}
+#hero button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding: 20px;
+}
