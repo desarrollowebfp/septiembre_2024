@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows:
+    200px
+    200px
+    200px
+    200px
+    200px;
+  grid-template-areas:
+    "my-header"
+    "my-main"
+    "my-aside"
+    "my-section"
+    "my-footer";
+
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:
+      200px
+      1fr
+      200px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-main my-section my-aside"
+      "my-footer my-footer my-footer";
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:
+      200px
+      1fr
+      200px;
+    grid-template-areas:
+      "my-header my-header my-header my-header my-header"
+      "my-section my-main my-main my-main my-aside"
+      "my-footer my-footer my-footer my-footer my-footer";
+  }
+}
+
+header {
+  background-color: crimson;
+  grid-area: my-header;
+}
+
+section {
+  background-color: aqua;
+  grid-area: my-section;
+}
+
+main {
+  background-color: green;
+  grid-area: my-main;
+}
+
+aside {
+  background-color: blue;
+  grid-area: my-aside;
+}
+
+footer {
+  background-color: purple;
+  grid-area: my-footer;
+}
+
+header, section, main, aside, footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
