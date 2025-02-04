@@ -1,0 +1,33 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar > img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.avatar.sm {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+}
+
+.avatar.md {
+  width: 120px;
+  height: 120px;
+  font-size: 40px;
+}
+
+.avatar.lg {
+  width: 200px;
+  height: 200px;
+  font-size: 60px;
+}

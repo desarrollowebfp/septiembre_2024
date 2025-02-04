@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  font-family: monospace;
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  
+}
