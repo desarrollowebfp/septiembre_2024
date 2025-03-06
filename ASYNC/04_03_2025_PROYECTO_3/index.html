@@ -10,11 +10,21 @@
     <header>
       <h1>Photo App</h1>
       <input type="text" placeholder="Orange cat..." id="photo_input" />
+      <select id="color_input">
+        <option value="">Select color</option>
+        <option value="black_and_white">Black and white</option>
+        <option value="orange">Orange</option>
+        <option value="green">Green</option>
+      </select>
       <button id="search_btn">Search</button>
     </header>
     <main>
       <ul id="photo_container"></ul>
     </main>
+    <footer>
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

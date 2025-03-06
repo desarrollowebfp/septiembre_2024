@@ -30,3 +30,11 @@ header {
   object-fit: cover;
   padding: 10px;
 }
+
+.error{
+  min-height: 500px;
+  display:grid;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+}
