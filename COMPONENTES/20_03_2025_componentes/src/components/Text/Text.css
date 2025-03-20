@@ -1,0 +1,25 @@
+.text,
+.text.base {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.text.md {
+  font-size: 18px;
+}
+
+.text.lg {
+  font-size: 23px;
+}
+
+.text.left {
+  text-align: left;
+}
+
+.text.right {
+  text-align: right;
+}
+
+.text.center {
+  text-align: center;
+}

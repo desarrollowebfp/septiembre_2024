@@ -1,0 +1,14 @@
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav > ul > li > a:hover {
+  color: #808080;
+}
