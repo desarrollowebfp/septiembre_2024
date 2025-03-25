@@ -1,0 +1,24 @@
+.card {
+  padding: 20px;
+  border: 1px dashed black;
+  width: 300px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card.movie {
+  background-color: antiquewhite;
+}
+
+.card.show {
+  background-color: cadetblue;
+}
+
+.card.movie.good{
+    color: green;
+}
+
+.card.movie.bad{
+    color: orange
+}
