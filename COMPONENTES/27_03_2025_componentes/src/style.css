@@ -1,0 +1,9 @@
+circle-progress::part(base) {
+  width: 60px;
+  height: auto;
+}
+
+/* circle-progress::part(circle) {
+  fill: blue;
+}
+ */
