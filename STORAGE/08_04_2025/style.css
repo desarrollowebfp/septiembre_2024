@@ -20,3 +20,7 @@ main {
   border: 1px dashed white;
   margin: 30px;
 }
+
+p{
+  cursor: pointer;
+}
