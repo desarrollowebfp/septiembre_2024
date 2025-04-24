@@ -15,7 +15,6 @@ interface Alumno {
 
 const pepe: Alumno = {
   nombre: "Pepe",
-  edad: 28,
   matricula: true,
   ciudad: "Segovia",
 };
