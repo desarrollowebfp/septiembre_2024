@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#discos-container {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  text-align: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#discos-container img {
+  width: 300px;
+}
+
+#discos-container li {
+  padding: 20px;
+  border: 1px dashed grey;
+}
+
+#discos-container h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+}

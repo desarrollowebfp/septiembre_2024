@@ -1,0 +1,18 @@
+{
+  "discos": [
+    {
+      "id": "1161",
+      "title": "Dom Mysteriis Dom Sathanas",
+      "artist": "Mayhem",
+      "year": "1991",
+      "cover": "https://m.media-amazon.com/images/I/51x9KCJl8TL._UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "f8f6",
+      "title": "A Blaze in the Northern Sky",
+      "artist": "Dark Throne",
+      "year": "1993",
+      "cover": "https://m.media-amazon.com/images/I/714RJoGhL9L.jpg"
+    }
+  ]
+}
