@@ -2,6 +2,8 @@ const API = "http://localhost:3000/discos";
 const lista = document.querySelector("#discos-container");
 const formulario = document.querySelector("#form-disco");
 
+let modoEdicion = false;
+
 const crearDisco = (disco) => {
   const li = document.createElement("li");
   li.innerHTML = `
@@ -9,7 +11,29 @@ const crearDisco = (disco) => {
           <img src="${disco.cover}" alt="${disco.artist} - ${disco.title}"/>
           <p>${disco.year}</p>
       `;
-  //Añadimos el botón y la función de borrar tanto de la web como de la API
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Borrar disco";
+  deleteBtn.addEventListener("click", async () => {
+    await fetch(`${API}/${disco.id}`, {
+      method: "DELETE",
+    });
+    consultarDiscos();
+  });
+  li.appendChild(deleteBtn);
+  //Creamoe el boton de edtiar
+  const editBtn = document.createElement("button");
+  editBtn.textContent = "Editar disco";
+  editBtn.addEventListener("click", () => {
+    modoEdicion = true;
+    document.querySelector("#submitbtn").textContent = "Editar disco";
+    //Pintamos los datos del disco existente en el formulario
+    document.querySelector("#titulo").value = disco.title;
+    document.querySelector("#artista").value = disco.artist;
+    document.querySelector("#portada").value = disco.cover;
+    document.querySelector("#año").value = disco.year;
+    document.querySelector("#id").value = disco.id;
+  });
+  li.appendChild(editBtn);
   return li;
 };
 
@@ -28,24 +52,40 @@ const consultarDiscos = async () => {
 //POST
 formulario.addEventListener("submit", async (ev) => {
   ev.preventDefault();
-  //Recuperamos los valores
-  const titulo = document.querySelector("#titulo").value;
-  const artista = document.querySelector("#artista").value;
-  const portada = document.querySelector("#portada").value;
-  const año = document.querySelector("#año").value;
-  //Creamos el nuevo objeto disco
-  const nuevoDisco = {
-    title: titulo,
-    artist: artista,
-    year: año,
-    cover: portada,
-  };
-  //Y lo mandamos a la base de datos mediante fetch
-  await fetch(API, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(nuevoDisco),
-  });
+
+  if (!modoEdicion) {
+    //Creamos el nuevo objeto disco
+    const nuevoDisco = {
+      id: crypto.randomUUID(),
+      title: document.querySelector("#titulo").value,
+      artist: document.querySelector("#artista").value,
+      year: document.querySelector("#año").value,
+      cover: document.querySelector("#portada").value,
+    };
+    //Y lo mandamos a la base de datos mediante fetch
+    await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(nuevoDisco),
+    });
+  } else {
+    //Recuperamos el id
+    const inputID = document.querySelector("#id").value;
+    const nuevoDisco = {
+      id: document.querySelector("#id").value,
+      title: document.querySelector("#titulo").value,
+      artist: document.querySelector("#artista").value,
+      year: document.querySelector("#año").value,
+      cover: document.querySelector("#portada").value,
+    };
+    await fetch(`${API}/${inputID}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(nuevoDisco),
+    });
+    modoEdicion = false
+  }
+
   //Reiniciamos el formulario
   formulario.reset();
   //Repintamos los discos para poder ver los cambios a tiempo real

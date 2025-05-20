@@ -1,18 +1,25 @@
 {
   "discos": [
     {
-      "id": "1161",
+      "id": "0442c3fe-ed8d-4c17-bb5b-f57c03529e39",
       "title": "Dom Mysteriis Dom Sathanas",
       "artist": "Mayhem",
       "year": "1991",
       "cover": "https://m.media-amazon.com/images/I/51x9KCJl8TL._UF894,1000_QL80_.jpg"
     },
     {
-      "id": "f8f6",
+      "id": "b1f9078f-cf34-4513-82fe-62caf25d264e",
       "title": "A Blaze in the Northern Sky",
       "artist": "Dark Throne",
-      "year": "1993",
+      "year": "1992",
       "cover": "https://m.media-amazon.com/images/I/714RJoGhL9L.jpg"
+    },
+    {
+      "id": "2553b90a-b65a-4dad-82e9-f6b045493c48",
+      "title": "How to disappear",
+      "artist": "Casey",
+      "year": "2024",
+      "cover": "https://lastfm.freetls.fastly.net/i/u/300x300/dbdba329d180f8d48d80115db50eb9a6.jpg"
     }
   ]
 }
