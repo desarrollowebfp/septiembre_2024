@@ -1,0 +1,15 @@
+{
+  "name": "tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.3.5"
+  }
+}
