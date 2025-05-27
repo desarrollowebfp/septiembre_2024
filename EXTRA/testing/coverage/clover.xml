@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1748373962178" clover="3.2.0">
+  <project timestamp="1748373962178" name="All files">
+    <metrics statements="14" coveredstatements="13" conditionals="3" coveredconditionals="2" methods="3" coveredmethods="2" elements="20" coveredelements="17" complexity="0" loc="14" ncloc="14" packages="3" files="3" classes="3"/>
+    <package name="src">
+      <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="main.js" path="/Users/antoniorosalesmartinez/Dev/PMBA/Prometeo/Repositorios/SEPTIEMBRE_2024/EXTRA/testing/src/main.js">
+        <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+      </file>
+    </package>
+    <package name="src.components.Button">
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="Button.js" path="/Users/antoniorosalesmartinez/Dev/PMBA/Prometeo/Repositorios/SEPTIEMBRE_2024/EXTRA/testing/src/components/Button/Button.js">
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Image">
+      <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="Image.js" path="/Users/antoniorosalesmartinez/Dev/PMBA/Prometeo/Repositorios/SEPTIEMBRE_2024/EXTRA/testing/src/components/Image/Image.js">
+        <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
