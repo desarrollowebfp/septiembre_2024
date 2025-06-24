@@ -1,0 +1,15 @@
+{
+  "name": "webscraping",
+  "version": "1.0.0",
+  "description": "Esto es un ejemplo de web scraping a la web de Steam",
+  "license": "ISC",
+  "author": "Antonio Rosales Martínez <antoniorosalesmartinez90@gmail.com>",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.10.2"
+  }
+}
