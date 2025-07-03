@@ -1,10 +1,11 @@
 import "./Header.css";
 import Title from "../Title/Title";
 
-const Header = () => {
+const Header = ({title}) => {
   return (
     <header>
-      <Title>Bienvenidos a React</Title>
+      <Title size="sm">{title}</Title>
+      <Title size="md">Esto es una prop children</Title>
     </header>
   );
 };
